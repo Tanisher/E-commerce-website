@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>multi currency trading platform</title>
+        <link rel="stylesheet" href="Style.css">
+    </head>
+</head>
+<body>
+      <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="image/logo1.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="signinS.html">SELLER</a></li>
+                        <li><a href="login.html">BUYER</a></li>
+                        <li><a href="newsfeed.html">NEWSFEED</a></li>
+                        <li><a href="convcurr.html">CURRENCYCONVERSION</a></li>
+                        <li><a href="rates.html">HISTORICALRATES</a></li>
+                        <li><a href="contact.html">CONTACTS</a></li>
+                    </ul>
+                </div>
+            </nav>    
+            <hl>THE SELLER</hl>
+            
+        </section>
+
+    <div class="seller-page">
+             <section class="about-us">
+            
+            <div class="row">
+                <div class="seller-section">
+                    <h2>Seller's Details</h2>
+                    <p><strong>First Name:</strong> <span id="displayFirstName"></span></p>
+                    <p><strong>Last Name:</strong> <span id="displayLastName"></span></p>
+                    <p><strong>Email:</strong> <span id="displayEmail"></span></p>
+                    <p><strong>Business Description:</strong></p>
+                    <p id="displayBusinessDescription"></p>
+                </div>
+                <div class="about-col">
+                    <!----------find a way to upload thing ppl are selling here--------->
+                    <img src="image/1.png">
+                </div>
+            </div>
+                 
+        </section> 
+    </div>
+    
+    <section>
+                <div class="row">
+                <div class="campus-col">
+                   <img src="image/seller.png">
+                    <a href=""><div class="layer">
+                        <h3>inventory</h3>
+                    </div></a>
+                </div>
+                <div class="campus-col">
+                   <img src="image/uploads.png">
+                    <a href="uploadform.html"><div class="layer">
+                        <h3>Uploads</h3>
+                    </div></a>
+                </div>
+                <div class="campus-col">
+                   <img src="image/home.png">
+                    <a href="index.html"><div class="layer">
+                        <h3>return</h3>
+                    </div></a>
+                </div> 
+            </div>
+        </section>
+    
+    <section class="footer">
+            <h4>About Us</h4>
+            <p>We are group six we are the best of the best</p>
+    </section>
+        
+
+    <script>
+        // Get URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const firstName = urlParams.get('firstName');
+        const lastName = urlParams.get('lastName');
+        const email = urlParams.get('email');
+        const businessDescription = urlParams.get('businessDescription');
+
+        // Display the parameters in the corresponding elements
+        document.getElementById('displayFirstName').textContent = firstName;
+        document.getElementById('displayLastName').textContent = lastName;
+        document.getElementById('displayEmail').textContent = email;
+        document.getElementById('displayBusinessDescription').textContent = businessDescription;
+    </script>
+</body>
+</html>
